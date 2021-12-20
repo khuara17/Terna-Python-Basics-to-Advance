@@ -1,13 +1,13 @@
 ############# Type Conversion ########
 
 a = (2,3,[45])
-b = list(a)
+b = str(a)
 # print(type(b))
 
 # set
 # dict
 
-print(len(a))
+# print(len(a))
 ########### Tuple ##################
 ''' 1. Tuples are used to store multiple items in a single variable.
     2. Tuple items are unchangeable(Immutable), and allow duplicate values.
@@ -132,14 +132,6 @@ update()	    Updates the dictionary with the specified key-value pairs
 values()	    Returns a list of all the values in the dictionary
 '''
 
-mydict = {
-    4 : 'first',
-    5.6 : [5,6],
-    True: 4,
-    'key' : {6: (6,90)},
-    5.6 : False,
-    }
-
 
 ########## Accessing an element of dict ############
 
@@ -147,7 +139,7 @@ mydict = {
 
 ###### Adding an item to dict #####
 
-mydict[7] = 85
+# mydict[7] = 85
 
 ######## Updating valuess ##########
 # mydict[4] = 5657
@@ -156,14 +148,29 @@ mydict[7] = 85
 ############# Removing an item from dict #######
 
 # mydict.pop('key')
-mydict.popitem()
+# mydict.popitem()
 # # del mydict
 # mydict.clear()
-print(len(mydict))
+# print(len(mydict))
 
 
 ######### Special Methods ########
+mydict = {
+    4 : 'first',
+    5.6 : [5,6],
+    True: 4,
+    'key' : {6: (6,90)},
+    7 : 85
+    }
+# print(mydict.keys())
+# print(mydict.values())
+# print(mydict.items())
 
 
 
 ############### Applying Loops on data stuctures #############
+
+# for i,j in mydict.items():
+#     print(i,j)
+
+# for i in mylist:
