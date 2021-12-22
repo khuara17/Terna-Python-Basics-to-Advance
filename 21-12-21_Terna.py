@@ -57,7 +57,7 @@ Operator Name	Description
 
     # 16 8 4*1 + 2*0 + 1* 1 
 
-x = 4   #100 
+x =4    #100 
 # &
 y = 5   #101
 # --------------
@@ -93,6 +93,16 @@ x = 5
 
 
 ######### If Else #############
+#Syntax:
+
+'''
+if conition:
+    statement(Operations)
+else:
+    statement(Operations)
+'''
+
+
 
 x = 7
 y = 5
@@ -105,6 +115,18 @@ y = 5
 #     print(f"{x} is smaller than x") 
 
 ###### Elif ######
+
+#Syntax:
+
+'''
+if conition:
+    statement(Operations)
+elif conition:
+    statement(Operations)
+else:
+    statement(Operations)
+'''
+
 
 # if x <= y:
 #     y *= 2
@@ -123,7 +145,7 @@ y = 5
 
 ###### Problem 1 ##########
 '''
-you are creating a app for a school, where you will take marks from user and you will prin their category
+you are creating a app for a school, where you will take marks from user and you will print their category
 
 80       -  Dist
 50 to 79 -  First class
@@ -131,19 +153,13 @@ you are creating a app for a school, where you will take marks from user and you
 0 to 34  -  Fail
 '''
 
-x = int(input("ener your marks "))
-if x >= 80:
-    print("dist")
-elif x >= 50 and x <= 79:
-    print("first class")    
-elif x >= 35 and x <= 49:
-    print("second class")   
-else:
-    print("you are fail")    
-
-
-
-
-
-
+# marks=int(input("enter the marks"))
+# if(marks>=80):
+#     print("Distinction")
+# elif(marks>=50 and marks<=79):
+#     print("First Class")
+# elif(marks>=35 and marks<=49):
+#     print('Second Class')
+# else:
+#     print("Fail")
 
