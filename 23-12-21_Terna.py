@@ -95,6 +95,13 @@ Take the comma seperated numbers from user and find the largest number from it.
 
 # print(myList[0])
 
+# Method 3
+
+# myList = list(map(int,input('Enter the number with comma for split : ').split(",")))
+# myList = ['abc','kdf','cef']
+# print(max(myList))
+# print(min(myList))
+# print(sum(myList))
 
 #2.
 '''
@@ -121,23 +128,23 @@ return_unique([9, 5, 6, 8, 7, 7, 1, 1, 1, 1, 1, 9, 8]) ➞ [5, 6]
 # print(op)
 # 1, 9, 8, 8, 7, 6, 1, 6
 
-list = list(map(int, input("Enter Numbers saperated by comma: ").split(",")))
-dict = {
-    1 : 1,
-    9 : 1,
-    8 : 2,
+# list = list(map(int, input("Enter Numbers saperated by comma: ").split(",")))
+# dict = {
+#     1 : 1,
+#     9 : 1,
+#     8 : 2,
 
-}
-for x in list:
-    if x in dict.keys():
-        dict[x] = dict[x]+1
-    else:
-        dict[x] = 1
-out = []
-for x in dict:
-    if dict[x] == 1:
-        out.append(x)
-print(out)
+# }
+# for x in list:
+#     if x in dict.keys():
+#         dict[x] = dict[x]+1
+#     else:
+#         dict[x] = 1
+# out = []
+# for x in dict:
+#     if dict[x] == 1:
+#         out.append(x)
+# print(out)
 
 
 # 3.
@@ -162,3 +169,57 @@ is_harshad(516) ➞ True
 
 is_harshad(200) ➞ True
 '''
+
+# Method 1
+
+# 5 % 2 = 
+
+number = int(input('Enter a number: '))
+# '200'
+total = 0
+# for digit in str(number):
+#     total += int(digit)
+# print(number%total==0)
+# if number%total==0:
+#     print("{} is a Harshad Number".format(number))
+# else:
+#     print("{} is not a Harshad Number".format(number))
+
+# Method 2
+
+# 312 % 10 = 2
+# 312 // 10 = 31
+
+# 31 % 10 = 1
+# 31 // 10 = 3
+
+# 3 % 10 = 3
+# 3 // 10 = 0
+
+
+
+
+# x=int(input("Enter the number :"))
+# y=x
+# sum=0
+# for i in str(x):
+#     k=x%10
+#     sum=sum+k
+#     x=x//10
+# if (y%sum==0):
+#     print(y%sum==0)
+# else:
+#     print(f"{y} is not divisible")
+
+
+# a = 481
+# i = 0
+# while (a!=0):
+#     i=i+(a%10)
+#     a=a//10
+# # print(i)
+# # print(a)
+# if (a%i)==0:
+#     print("harshad")
+# else:
+#     print("not harshad")
