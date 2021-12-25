@@ -41,7 +41,7 @@ return the operation result.
 a=int(input("enter the number 1 "))
 b=int(input("enter the number 2 "))
 c=input("enter the operator +,-,*,/ ")
-### Invalid option
+
 def calculator(a,b,c):
     if(c=='+'):
         sum = a+b
@@ -49,11 +49,12 @@ def calculator(a,b,c):
         sum = a-b
     elif c == '*':
         sum = a * b
-    else:
+    elif c == '/':
         sum = a / b
+    else:
+        sum = 'Invalid Option selected'
+
     return sum
 
 res=calculator(a,b,c)
 print(res)
-
-### Invalid option
